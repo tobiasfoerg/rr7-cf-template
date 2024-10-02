@@ -1,0 +1,36 @@
+{
+  "name": "rr7-cf-template",
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "preview": "wrangler dev",
+    "gen:types": "react-router typegen && wrangler types",
+    "test:types": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@react-router/cloudflare": "0.0.0-nightly-d65827ebb-20241002",
+    "isbot": "^5.1.17",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "0.0.0-nightly-d65827ebb-20241002"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.3",
+    "@cloudflare/workers-types": "^4.20240925.0",
+    "@hattip/adapter-node": "^0.0.48",
+    "@jacob-ebey/vite-cloudflare-plugin": "^0.1.0",
+    "@react-router/dev": "0.0.0-nightly-d65827ebb-20241002",
+    "@react-router/remix-v2-routes": "0.0.0-nightly-4db408248-20240910",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.2",
+    "vite": "6.0.0-beta.2",
+    "wrangler": "^3.79.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "6.0.0-beta.2"
+    }
+  }
+}
